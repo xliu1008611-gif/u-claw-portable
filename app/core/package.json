@@ -1,0 +1,13 @@
+{
+  "name": "u-claw-core",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@openclaw-china/dingtalk": "^2026.4.24",
+    "@openclaw-china/feishu-china": "^2026.4.24",
+    "@openclaw-china/qqbot": "^2026.4.24",
+    "@openclaw-china/wecom": "^2026.4.24",
+    "@sliverp/qqbot": "^1.6.1",
+    "openclaw": "2026.6.9"
+  }
+}

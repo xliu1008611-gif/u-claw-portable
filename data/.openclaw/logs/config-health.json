@@ -1,0 +1,37 @@
+{
+  "entries": {
+    "D:\\BaiduNetdiskDownload\\u-claw-portable-windows-v2.1.11\\data\\.openclaw\\openclaw.json": {
+      "lastKnownGood": {
+        "hash": "67b0fe503f2eff8e152bbc3cf4b8a447b424536f5a6fd39948da8d256a9b415d",
+        "bytes": 1085,
+        "mtimeMs": 1782451666683.8025,
+        "ctimeMs": 1782451666683.8025,
+        "dev": "4271624267",
+        "ino": "4222124651602895",
+        "mode": 33206,
+        "nlink": 1,
+        "uid": 0,
+        "gid": 0,
+        "hasMeta": true,
+        "gatewayMode": "local",
+        "observedAt": "2026-06-26T05:27:51.262Z"
+      },
+      "lastObservedSuspiciousSignature": null,
+      "lastPromotedGood": {
+        "hash": "67b0fe503f2eff8e152bbc3cf4b8a447b424536f5a6fd39948da8d256a9b415d",
+        "bytes": 1085,
+        "mtimeMs": 1782451666683.8025,
+        "ctimeMs": 1782451666683.8025,
+        "dev": "4271624267",
+        "ino": "4222124651602895",
+        "mode": 33206,
+        "nlink": 1,
+        "uid": 0,
+        "gid": 0,
+        "hasMeta": true,
+        "gatewayMode": "local",
+        "observedAt": "2026-06-26T05:27:51.262Z"
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "providers": {
+    "uclaw-cloud": {
+      "baseUrl": "http://gotoo.icu:8080/antigravity/v1",
+      "apiKey": "sk-c3d40e3a8ba87054be512780396d33d3c5342f4d81e7f9dbf2df1b484e864524",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "deepseek-v4-flash",
+          "name": "deepseek-v4-flash",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 128000,
+          "maxTokens": 8192
+        }
+      ]
+    },
+    "anthropic-custom": {
+      "baseUrl": "http://gotoo.icu:8080/antigravity/v1",
+      "api": "anthropic-messages",
+      "models": [
+        {
+          "id": "gemini-2.5-flash",
+          "name": "gemini-2.5-flash",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 128000,
+          "maxTokens": 8192
+        }
+      ],
+      "apiKey": "sk-c3d40e3a8ba87054be512780396d33d3c5342f4d81e7f9dbf2df1b484e864524"
+    },
+    "custom-anthropic": {
+      "baseUrl": "http://gotoo.icu:8080/antigravity",
+      "apiKey": "sk-9196184d8e744640dc52edd2f4038d42dfec6320724eac67973e24e32afe2a8a",
+      "api": "anthropic-messages",
+      "models": [
+        {
+          "id": "claude-sonnet-4-6",
+          "name": "claude-sonnet-4-6",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 128000,
+          "maxTokens": 8192
+        }
+      ]
+    }
+  }
+}

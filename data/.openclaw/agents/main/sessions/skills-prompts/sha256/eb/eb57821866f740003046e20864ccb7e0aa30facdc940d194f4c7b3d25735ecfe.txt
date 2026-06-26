@@ -1,0 +1,189 @@
+
+
+The following skills provide specialized instructions for specific tasks.
+Use the read tool to load a skill's file when the task matches its description.
+If a skill's <version> differs from a previous turn, re-read its SKILL.md before using it.
+When a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.
+
+<available_skills>
+  <skill>
+    <name>bilibili-helper</name>
+    <description>B站内容助手 - 视频标题描述优化、标签策略、封面设计建议、分区选择、评论互动</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\bilibili-helper\SKILL.md</location>
+    <version>sha256:a077057ad3505be2</version>
+  </skill>
+  <skill>
+    <name>browser-automation</name>
+    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\data\.openclaw\plugin-skills\browser-automation\SKILL.md</location>
+    <version>sha256:608bed60aca52631</version>
+  </skill>
+  <skill>
+    <name>canvas</name>
+    <description>Present HTML on connected OpenClaw node canvases, navigate/eval/snapshot, and debug canvas host URLs.</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\canvas\SKILL.md</location>
+    <version>sha256:7419e23f242397b3</version>
+  </skill>
+  <skill>
+    <name>china-search</name>
+    <description>国内搜索引擎 - 百度、搜狗、Bing中国搜索，绕过GFW限制</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\china-search\SKILL.md</location>
+    <version>sha256:99634bd6621fa73e</version>
+  </skill>
+  <skill>
+    <name>china-translate</name>
+    <description>中英互译 + 本地化 - 技术翻译、UI本地化、文化适配、避免机翻腔</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\china-translate\SKILL.md</location>
+    <version>sha256:f519313cebaea4d2</version>
+  </skill>
+  <skill>
+    <name>china-weather</name>
+    <description>中国城市天气查询 - 支持中文城市名、农历日期、wttr.in接口</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\china-weather\SKILL.md</location>
+    <version>sha256:488feb83585622e8</version>
+  </skill>
+  <skill>
+    <name>deepseek-helper</name>
+    <description>DeepSeek API 助手 - 编程辅助、模型选择、API调用指南、定价信息</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\deepseek-helper\SKILL.md</location>
+    <version>sha256:b0ed6c4db23994a4</version>
+  </skill>
+  <skill>
+    <name>diagram-maker</name>
+    <description>Create SVG/HTML or Excalidraw diagrams for concepts, architecture, flows, and whiteboards.</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\diagram-maker\SKILL.md</location>
+    <version>sha256:6195e03fcb04a1a6</version>
+  </skill>
+  <skill>
+    <name>douyin-script</name>
+    <description>抖音/快手短视频脚本 - 前3秒hook、脚本结构、热门音乐建议、话题标签策略</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\douyin-script\SKILL.md</location>
+    <version>sha256:4e3ea74958a43fb0</version>
+  </skill>
+  <skill>
+    <name>excel-helper</name>
+    <description>Excel 表格助手 - 公式编写、数据透视表、图表可视化、宏自动化、数据清洗</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\excel-helper\SKILL.md</location>
+    <version>sha256:bed5c0b2fc416e84</version>
+  </skill>
+  <skill>
+    <name>healthcheck</name>
+    <description>Audit/harden OpenClaw hosts: SSH, firewall, updates, exposure, backups, disk encryption, gateway security.</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\healthcheck\SKILL.md</location>
+    <version>sha256:518ec6e0482cf1c7</version>
+  </skill>
+  <skill>
+    <name>image-compress</name>
+    <description>图片压缩/转换 - 批量压缩、改尺寸、转格式（jpg/png/webp），本地处理不失隐私</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\image-compress\SKILL.md</location>
+    <version>sha256:92ff4e8b367a8a87</version>
+  </skill>
+  <skill>
+    <name>meme-maker</name>
+    <description>Search meme templates, suggest formats, and generate local or hosted image memes.</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\meme-maker\SKILL.md</location>
+    <version>sha256:8b8832f9f0f58b16</version>
+  </skill>
+  <skill>
+    <name>node-connect</name>
+    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\node-connect\SKILL.md</location>
+    <version>sha256:cc39026fd84e5cfa</version>
+  </skill>
+  <skill>
+    <name>node-inspect-debugger</name>
+    <description>Debug Node.js with node inspect, --inspect, breakpoints, CDP, heap, and CPU profiles.</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\node-inspect-debugger\SKILL.md</location>
+    <version>sha256:50d2f6828eaf4bbf</version>
+  </skill>
+  <skill>
+    <name>notion</name>
+    <description>Notion CLI/API for pages, Markdown content, data sources, files, comments, search, Workers, and raw API calls.</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\notion\SKILL.md</location>
+    <version>sha256:d45e2c1270d58c78</version>
+  </skill>
+  <skill>
+    <name>pdf-toolkit</name>
+    <description>PDF 工具箱 - 合并/拆分/提取文字/转图片，纯命令行处理本地 PDF</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\pdf-toolkit\SKILL.md</location>
+    <version>sha256:399ae303d80d9fa7</version>
+  </skill>
+  <skill>
+    <name>ppt-designer</name>
+    <description>PPT 演示助手 - 幻灯片设计、内容结构、视觉优化、动画建议、演讲稿</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\ppt-designer\SKILL.md</location>
+    <version>sha256:36b1cc8ddf3231b4</version>
+  </skill>
+  <skill>
+    <name>qrcode-maker</name>
+    <description>二维码生成 - 把网址/文本/WiFi 信息生成二维码图片，本地离线生成</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\qrcode-maker\SKILL.md</location>
+    <version>sha256:eb43aa3af2fb1adf</version>
+  </skill>
+  <skill>
+    <name>skill-creator</name>
+    <description>Create, edit, audit, tidy, validate, or restructure AgentSkills and SKILL.md files.</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\skill-creator\SKILL.md</location>
+    <version>sha256:9e971bac63ad787f</version>
+  </skill>
+  <skill>
+    <name>spike</name>
+    <description>Run throwaway prototypes to validate feasibility, compare approaches, and report a verdict.</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\spike\SKILL.md</location>
+    <version>sha256:1258cde2d0e53267</version>
+  </skill>
+  <skill>
+    <name>taskflow</name>
+    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\taskflow\SKILL.md</location>
+    <version>sha256:d8b6a48d329aef0a</version>
+  </skill>
+  <skill>
+    <name>taskflow-inbox-triage</name>
+    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\taskflow-inbox-triage\SKILL.md</location>
+    <version>sha256:1fe28cd924d8ae2d</version>
+  </skill>
+  <skill>
+    <name>weather</name>
+    <description>Current weather and forecasts with web_fetch, falling back to wttr.in curl for locations, rain, temperature, travel planning.</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\weather\SKILL.md</location>
+    <version>sha256:62ab4821aa873949</version>
+  </skill>
+  <skill>
+    <name>web-to-markdown</name>
+    <description>网页转 Markdown - 抓取任意网页正文并转成干净的 Markdown，便于阅读/收藏/二次创作</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\web-to-markdown\SKILL.md</location>
+    <version>sha256:c8dc60cc30a43f5a</version>
+  </skill>
+  <skill>
+    <name>wechat-article</name>
+    <description>微信公众号文章写作 - 文章结构、排版规范、阅读转化优化、封面建议</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\wechat-article\SKILL.md</location>
+    <version>sha256:22d836238a706ccf</version>
+  </skill>
+  <skill>
+    <name>weibo-poster</name>
+    <description>微博内容创作 - 140字优化、话题热搜、@提及策略、配图描述、发布时机</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\weibo-poster\SKILL.md</location>
+    <version>sha256:a18710697e875848</version>
+  </skill>
+  <skill>
+    <name>word-writer</name>
+    <description>Word 文档助手 - 文章撰写、格式排版、模板选择、目录生成、批量处理</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\word-writer\SKILL.md</location>
+    <version>sha256:ca95ff0c63e0c06c</version>
+  </skill>
+  <skill>
+    <name>xiaohongshu-writer</name>
+    <description>小红书笔记写作助手 - 标题优化、emoji策略、话题标签、封面文案、笔记结构</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\xiaohongshu-writer\SKILL.md</location>
+    <version>sha256:ac490f68d8fa55f6</version>
+  </skill>
+  <skill>
+    <name>zhihu-writer</name>
+    <description>知乎回答/文章写作 - 回答结构、专业语气、引用规范、话题关联、盐值优化</description>
+    <location>d:\BaiduNetdiskDownload\u-claw-portable-windows-v2.1.11\app\core\node_modules\openclaw\skills\zhihu-writer\SKILL.md</location>
+    <version>sha256:b215eb8c0d8d6eaa</version>
+  </skill>
+</available_skills>

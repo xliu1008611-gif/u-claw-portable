@@ -1,0 +1,26 @@
+# Node.js / npm
+node_modules/
+package-lock.json
+npm-debug.log
+
+# U‑Claw runtime / temp files
+AppData/Local/Temp/openclaw/
+C:/Users/WELove/.openclaw/
+*.log
+*.tmp
+
+# OS‑specific
+Thumbs.db
+.DS_Store
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Build artefacts
+dist/
+build/
+out/
+data/.openclaw/workspace/
+data/.openclaw/workspace-attestations/

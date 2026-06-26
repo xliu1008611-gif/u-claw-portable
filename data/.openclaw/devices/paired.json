@@ -1,0 +1,51 @@
+{
+  "c4539eec7a2c7421040f1d4d481701122aaf9e3a8ad3ad7dc72eca552d432be6": {
+    "deviceId": "c4539eec7a2c7421040f1d4d481701122aaf9e3a8ad3ad7dc72eca552d432be6",
+    "publicKey": "_-dlON775LacLARSupEJ3PpTFyxXM1cg8Fwgw72oXXE",
+    "platform": "Win32",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "uMAwa9JocYAultqwKv3iOynsw11yDq7GP65xQ6P4db0",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing",
+          "operator.read",
+          "operator.write"
+        ],
+        "issuer": {
+          "kind": "shared-gateway-auth",
+          "generation": "Ym65qWkVtdTvRtaq8sPczpXYkJyIRlOUBWIFmj27pZg"
+        },
+        "createdAtMs": 1782439809305,
+        "rotatedAtMs": 1782439809324,
+        "lastUsedAtMs": 1782450872363
+      }
+    },
+    "createdAtMs": 1782439809304,
+    "approvedAtMs": 1782439809304,
+    "lastSeenAtMs": 1782450872363,
+    "lastSeenReason": "device-token-auth"
+  }
+}
