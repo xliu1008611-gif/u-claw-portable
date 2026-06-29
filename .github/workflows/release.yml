@@ -24,7 +24,7 @@ jobs:
       - name: Install runtime dependencies
         run: |
           cd app\runtime\node-win-x64
-          npm install
+          if (Test-Path "package.json") { npm install } else { Write-Host "No package.json found in runtime, skipping npm install." }
 
       - name: Install core dependencies
         run: |
