@@ -20,7 +20,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22.x'
-          cache: 'npm'
 
       - name: Install runtime dependencies
         run: |
@@ -32,17 +31,10 @@ jobs:
           cd app\core
           npm ci
 
-      - name: Prune dev dependencies (optional, reduces zip size)
-        run: |
-          cd app\runtime\node-win-x64
-          npm prune --production
-          cd ..\..\core
-          npm prune --production
-
       - name: Create portable zip (includes node_modules)
         run: |
           $zip = "U-Claw-Portable-${{ github.ref_name }}.zip"
-          Compress-Archive -Path * -DestinationPath $zip -Force
+          Compress-Archive -Path "app\runtime\node-win-x64\node_modules", "app\core\node_modules", "app", "data", "config-server", "*.bat", "*.ps1", ".gitignore", "package.json", "LICENSE", "README.md" -DestinationPath $zip -Force -ErrorAction SilentlyContinue
 
       - name: Publish Release with zip
         uses: softprops/action-gh-release@v2
