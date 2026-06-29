@@ -34,7 +34,24 @@ jobs:
       - name: Create portable zip (includes node_modules)
         run: |
           $zip = "U-Claw-Portable-${{ github.ref_name }}.zip"
-          Compress-Archive -Path "app\runtime\node-win-x64\node_modules", "app\core\node_modules", "app", "data", "config-server", "*.bat", "*.ps1", ".gitignore", "package.json", "LICENSE", "README.md" -DestinationPath $zip -Force -ErrorAction SilentlyContinue
+          $paths = @()
+          $targets = @(
+            "app\runtime\node-win-x64\node_modules",
+            "app\core\node_modules",
+            "app",
+            "data",
+            "config-server",
+            "package.json",
+            "LICENSE",
+            "README.md"
+          )
+          foreach ($t in $targets) {
+            if (Test-Path $t) { $paths += $t }
+          }
+          # Include any .bat or .ps1 scripts in root
+          Get-ChildItem -Path . -Filter "*.bat" | ForEach-Object { $paths += $_.FullName }
+          Get-ChildItem -Path . -Filter "*.ps1" | ForEach-Object { $paths += $_.FullName }
+          Compress-Archive -Path $paths -DestinationPath $zip -Force -ErrorAction SilentlyContinue
 
       - name: Publish Release with zip
         uses: softprops/action-gh-release@v2
