@@ -1,0 +1,53 @@
+name: Build & Publish U-Claw Portable Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: 'npm'
+
+      - name: Install runtime dependencies
+        run: |
+          cd app\runtime\node-win-x64
+          npm ci
+
+      - name: Install core dependencies
+        run: |
+          cd app\core
+          npm ci
+
+      - name: Prune dev dependencies (optional, reduces zip size)
+        run: |
+          cd app\runtime\node-win-x64
+          npm prune --production
+          cd ..\..\core
+          npm prune --production
+
+      - name: Create portable zip (includes node_modules)
+        run: |
+          $zip = "U-Claw-Portable-${{ github.ref_name }}.zip"
+          Compress-Archive -Path * -DestinationPath $zip -Force
+
+      - name: Publish Release with zip
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: "U-Claw Portable ${{ github.ref_name }}"
+          files: U-Claw-Portable-${{ github.ref_name }}.zip
+          generate_release_notes: true
