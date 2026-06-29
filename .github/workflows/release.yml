@@ -24,7 +24,7 @@ jobs:
       - name: Install runtime dependencies
         run: |
           cd app\runtime\node-win-x64
-          npm ci
+          npm install
 
       - name: Install core dependencies
         run: |
